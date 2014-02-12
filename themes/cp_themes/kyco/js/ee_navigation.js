@@ -2,7 +2,7 @@
  * @author	Cornelius Weidmann
  */
 
-$(document).ready(function() {
+$(window).load(function() {
 	// Remove sidebar because it breaks layout in Chrome
 	$('#sideBar').remove();
 
