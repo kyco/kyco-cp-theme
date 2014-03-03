@@ -10,6 +10,14 @@ $(window).load(function() {
 	$('#navigationTabs').unbind();
 	$('#navigationTabs li').unbind();
 
+	// Decrease z-index by one for each list item,
+	// so that on small screens one can still use menu properly
+	var zIndexMax = 100;
+	$('#navigationTabs > li.parent').each(function() {
+		$(this).css('z-index', zIndexMax);
+		zIndexMax--;
+	});
+
 	// Attach new functionality
 	$('#navigationTabs > li.parent').hover(function() {
 		$(this).addClass('active');
