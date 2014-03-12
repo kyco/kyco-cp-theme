@@ -19,4 +19,5 @@ to change colours. Alternately just delete the login.css to use the default EE l
 Support
 -------
 
-For bugs or improvements please email [info@kycosoftware.com](mailto:info@kycosoftware.com).
+For bugs or improvements please use the [issues tab](https://github.com/kyco/kyco-cp-theme/issues)
+or email [support@kycosoftware.com](mailto:support@kycosoftware.com).
