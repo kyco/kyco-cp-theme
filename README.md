@@ -16,7 +16,7 @@ Configuration
 
 You can manually replace the logo.png (in the images directory) to give the login screen a more personal touch. For further customisation edit the login.css. Alternately just delete the login.css to use the default EE login screen styling.
 
-Conflicts:
+**Conflicts:**  
 Superfish EE Control Panel (simply uninstall superfish to get kyco cp theme working)
 
 
