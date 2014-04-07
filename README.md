@@ -9,13 +9,23 @@ How to install
 
 Just copy and paste the files into the root of your EE installation.
 
-This CP theme has been tested with EE 2.7.x+ and 2.8.x+.
+This CP theme has been tested with EE 2.7+ and 2.8+.
 
 
 Configuration
 -------------
 
-You can manually replace the logo.png (in the images directory) to give the login screen a more personal touch. For further customisation edit the login.css. Alternately just delete the login.css to use the default EE login screen styling.
+You can manually replace the logo.png (in the images directory) to give the login screen
+a more personal touch.
+
+Colour schemes
+--------------
+
+The section of the stylesheet that controls the menu has been updated with SASS variables to allow
+for easy access to default colours. Simply open the global.scss and change the primary colour as well
+as your default font colour. Compile and save.
+
+Don't know SASS? More info on [SASS](http://sass-lang.com/).
 
 **Conflicts:**  
 Superfish EE Control Panel (simply uninstall superfish to get kyco cp theme working)
