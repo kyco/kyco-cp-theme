@@ -1,5 +1,6 @@
 kyco-cp-theme
 =============
+####Version: 1.1.0
 
 An EE Control Panel theme. It focuses on a highly efficient navigation which is fixed for quick access.
 

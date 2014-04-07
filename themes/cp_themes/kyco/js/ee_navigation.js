@@ -1,17 +1,29 @@
-/*!
- * @author	Cornelius Weidmann
- */
+/***************************************\
+
+	kyco-cp-theme
+	=============
+
+	Version 1.1.0
+
+	Brought to you by
+	http://www.kycosoftware.com/
+
+	Copyright 2014 Cornelius Weidmann
+
+	Distributed under the GPL
+
+\***************************************/
 
 $(window).load(function() {
-	// Remove sidebar because it breaks layout in Chrome
+	// Remove sidebar because we don't need it, also it breaks layout in Chrome
 	$('#sideBar').remove();
 
 	// Unbind all events from default ee_navigation script
 	$('#navigationTabs').unbind();
 	$('#navigationTabs li').unbind();
 
-	// Decrease z-index by one for each list item,
-	// so that on small screens one can still use menu properly
+	// Decrease z-index by one for each list item, so that on small screens
+	// one can still use menu properly
 	var zIndexMax = 100;
 	$('#navigationTabs > li.parent').each(function() {
 		$(this).css('z-index', zIndexMax);
