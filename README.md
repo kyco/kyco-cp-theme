@@ -1,4 +1,4 @@
-kyco-cp-theme
+kyco CP Theme
 =============
 ####Version: 1.1.0
 
