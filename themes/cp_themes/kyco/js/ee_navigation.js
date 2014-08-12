@@ -3,7 +3,7 @@
 	kyco-cp-theme
 	=============
 
-	Version 1.1.0
+	Version 1.1.1
 
 	Brought to you by
 	http://www.kycosoftware.com/
@@ -25,6 +25,7 @@ $(window).load(function() {
 	// Decrease z-index by one for each list item, so that on small screens
 	// one can still use menu properly
 	var zIndexMax = 100;
+
 	$('#navigationTabs > li.parent').each(function() {
 		$(this).css('z-index', zIndexMax);
 		zIndexMax--;
@@ -34,7 +35,7 @@ $(window).load(function() {
 	$('#navigationTabs > li.parent').hover(function() {
 		$(this).addClass('active');
 	}, function() {
-		var _this = $(this);
+		var _this          = $(this);
 		var listItemParent = _this.parents('ul#navigationTabs').find(_this.parents('li.parent'));
 
 		if (listItemParent.length !== -1) {
