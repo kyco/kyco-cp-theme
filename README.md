@@ -12,11 +12,15 @@ Just copy and paste the files into the root of your EE installation.
 This CP theme has been tested with EE 2.7.x, 2.8.x and 2.9.0.
 
 
-Configuration
+Customisation
 -------------
 
 You can manually replace the logo.png (in the images directory) to give the login screen
 a more personal touch.
+
+To customise the CSS, simply run `sass --watch global.scss:global.css`. This will allow you to change
+the colours in the `global.scss` as you please. Rember to also set `$custom_scheme` to `true` in 
+`_config.scss` if you wish to change the default colours.
 
 Colour schemes
 --------------

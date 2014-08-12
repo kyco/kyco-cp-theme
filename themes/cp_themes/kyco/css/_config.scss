@@ -1,0 +1,47 @@
+/***************************************\
+
+	kyco-cp-theme
+	=============
+
+	Version 1.1.1
+
+	Brought to you by
+	http://www.kycosoftware.com/
+
+	Copyright 2014 Cornelius Weidmann
+
+	Distributed under the GPL
+
+\***************************************/
+
+// Set to true to use your own colours, set to false to use default kyco colours.
+$custom_scheme: false;
+
+/*
+**	DO NOT CHANGE the following colours! They serve as default colours.
+**	EDIT custom colours in global.scss
+*/
+
+$mainNavBackground                          : #000;
+$textColour                                 : #fff;
+$hoverTextColour                            : $mainNavBackground;
+$primaryColour                              : #27343c;
+$secondaryColour                            : #ecf1f4;
+$dropDownHoverBackgroundColour              : $secondaryColour;
+$primarySeparatorColour                     : #5f6c74;
+$secondarySeparatorColour                   : #777;
+$listItemSelectorBackgroundColour           : #ccc;
+$listItemSelectorHoverBackgroundColour      : #999;
+$quickTabTextColour                         : $primarySeparatorColour;
+$quickTabHoverTextColour                    : #e11842;
+$homeAndQuickTabButtonHoverBackgroundColour : $mainNavBackground;
+$dropdownMenuListItemsHoverBackgroundColour : $primaryColour;
+$dropdownMenuListBackgroundColour           : $primaryColour;
+$dropdownBoxShadowFirstChild                : 0 3px 3px $mainNavBackground;
+$dropdownBoxShadow                          : 0 0px 5px $mainNavBackground;
+$primaryNavDivider                          : 1px solid $primarySeparatorColour;
+$secondaryNavDivider                        : 1px dotted $primarySeparatorColour;
+$rightHandButtonsHoverBoxShadow             : 0 0 0 1px $secondarySeparatorColour;
+$rightHandButtonsTextColour                 : $textColour;
+$rightHandButtonsBackgroundColour           : $mainNavBackground;
+$rightHandButtonsDivider                    : 1px dotted $secondarySeparatorColour;
