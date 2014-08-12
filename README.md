@@ -1,6 +1,6 @@
 kyco CP Theme
 =============
-####Version: 1.1.0
+####Version: 1.1.1
 
 An EE Control Panel theme. It focuses on a highly efficient navigation which is fixed for quick access.
 
@@ -9,7 +9,7 @@ How to install
 
 Just copy and paste the files into the root of your EE installation.
 
-This CP theme has been tested with EE 2.7+ and 2.8+.
+This CP theme has been tested with EE 2.7.x, 2.8.x and 2.9.0.
 
 
 Configuration

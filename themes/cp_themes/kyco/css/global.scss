@@ -3,7 +3,7 @@
 	kyco-cp-theme
 	=============
 
-	Version 1.1.0
+	Version 1.1.1
 
 	Brought to you by
 	http://www.kycosoftware.com/
@@ -14,87 +14,93 @@
 
 \***************************************/
 
-// DO NOT CHANGE THE FOLLOWING VAIRABLES, THEY SERVE AS DEFAULT COLOURS!
-// CHANGE THE VARIABLES FURTHER BELOW TO MAKE YOUR OWN COLOUR SCHEME.
+/*
+**	DO NOT CHANGE the following variables! They serve as default colours.
+**	Scroll further down to customise with your own colours.
+*/
 
-$mainNavBackground: #000;
-$textColour: #fff;
-$hoverTextColour: $mainNavBackground;
-$primaryColour: #27343c;
-$secondaryColour: #ecf1f4;
-$dropDownHoverBackgroundColour: $secondaryColour;
-$primarySeparatorColour: #5f6c74;
-$secondarySeparatorColour: #777;
-$listItemSelectorBackgroundColour: #ccc;
-$listItemSelectorHoverBackgroundColour: #999;
-$quickTabTextColour: $primarySeparatorColour;
-$quickTabHoverTextColour: #e11842;
-$homeAndQuickTabButtonHoverBackgroundColour: $mainNavBackground;
-$dropdownMenuListItemsHoverBackgroundColour: $primaryColour;
-$dropdownMenuListBackgroundColour: $primaryColour;
-$dropdownBoxShadowFirstChild: 0 3px 3px $mainNavBackground;
-$dropdownBoxShadow: 0 0px 5px $mainNavBackground;
-$primaryNavDivider: 1px solid $primarySeparatorColour;
-$secondaryNavDivider: 1px dotted $primarySeparatorColour;
-$rightHandButtonsHoverBoxShadow: 0 0 0 1px $secondarySeparatorColour;
-$rightHandButtonsTextColour: $textColour;
-$rightHandButtonsBackgroundColour: $mainNavBackground;
-$rightHandButtonsDivider: 1px dotted $secondarySeparatorColour;
+$mainNavBackground                          : #000;
+$textColour                                 : #fff;
+$hoverTextColour                            : $mainNavBackground;
+$primaryColour                              : #27343c;
+$secondaryColour                            : #ecf1f4;
+$dropDownHoverBackgroundColour              : $secondaryColour;
+$primarySeparatorColour                     : #5f6c74;
+$secondarySeparatorColour                   : #777;
+$listItemSelectorBackgroundColour           : #ccc;
+$listItemSelectorHoverBackgroundColour      : #999;
+$quickTabTextColour                         : $primarySeparatorColour;
+$quickTabHoverTextColour                    : #e11842;
+$homeAndQuickTabButtonHoverBackgroundColour : $mainNavBackground;
+$dropdownMenuListItemsHoverBackgroundColour : $primaryColour;
+$dropdownMenuListBackgroundColour           : $primaryColour;
+$dropdownBoxShadowFirstChild                : 0 3px 3px $mainNavBackground;
+$dropdownBoxShadow                          : 0 0px 5px $mainNavBackground;
+$primaryNavDivider                          : 1px solid $primarySeparatorColour;
+$secondaryNavDivider                        : 1px dotted $primarySeparatorColour;
+$rightHandButtonsHoverBoxShadow             : 0 0 0 1px $secondarySeparatorColour;
+$rightHandButtonsTextColour                 : $textColour;
+$rightHandButtonsBackgroundColour           : $mainNavBackground;
+$rightHandButtonsDivider                    : 1px dotted $secondarySeparatorColour;
 
+/*
+**	MAKE THEM CHANGES, GO WILD BELOW!
+*/
 
-/* _______________ Colour scheming _______________ */
+/* _______________ Colour scheme _______________ */
 
 $custom_scheme: false; // Set to true to use your own colours, set to false to use default kyco colours.
 
 @if $custom_scheme == true {
 	/*
-	 * Your primary colour
-	 */
-	$mainNavBackground: rgb(68, 134, 246); // change this to your primary colour!
+	**	Your primary colour
+	*/
+	$mainNavBackground: rgb(68, 134, 246); // Change this to your primary colour!
 
 	/*
-	 * Your primary font colours
-	 */
-	$textColour: #fff;
-	$hoverTextColour: $textColour;
+	**	Your primary font colours
+	*/
+	$textColour      : #fff;
+	$hoverTextColour : $textColour;
 
-	/* _______________ Play around with the variables below to optimise your scheme _______________ */
+	// Play around with the variables below to optimise your scheme:
 
-	$primaryColour: lighten($mainNavBackground, 10%);
-	$secondaryColour: darken($mainNavBackground, 10%);
+	$primaryColour   : lighten($mainNavBackground, 10%);
+	$secondaryColour : darken($mainNavBackground, 10%);
 
 	$dropDownHoverBackgroundColour: $secondaryColour;
 
-	$primarySeparatorColour: darken($mainNavBackground, 5%);
-	$secondarySeparatorColour: darken($mainNavBackground, 5%);
+	$primarySeparatorColour   : darken($mainNavBackground, 5%);
+	$secondarySeparatorColour : darken($mainNavBackground, 5%);
 
-	$listItemSelectorBackgroundColour: darken($mainNavBackground, 5%);
-	$listItemSelectorHoverBackgroundColour: $textColour;
+	$listItemSelectorBackgroundColour      : darken($mainNavBackground, 5%);
+	$listItemSelectorHoverBackgroundColour : $textColour;
 
-	$quickTabTextColour: darken($textColour, 20%);
-	$quickTabHoverTextColour: $textColour;
+	$quickTabTextColour      : darken($textColour, 20%);
+	$quickTabHoverTextColour : $textColour;
 
-	/* _______________ Finer details can be changed by editing the variables below this line _______________ */
+	// Finer details can be changed by editing the variables below this line:
 
-	$homeAndQuickTabButtonHoverBackgroundColour: $mainNavBackground;
+	$homeAndQuickTabButtonHoverBackgroundColour : $mainNavBackground;
 
-	$dropdownMenuListItemsHoverBackgroundColour: $primaryColour;
-	$dropdownMenuListBackgroundColour: $primaryColour;
+	$dropdownMenuListItemsHoverBackgroundColour : $primaryColour;
+	$dropdownMenuListBackgroundColour           : $primaryColour;
 
-	$dropdownBoxShadowFirstChild: 0 3px 3px $mainNavBackground;
-	$dropdownBoxShadow: 0 0px 5px $mainNavBackground;
+	$dropdownBoxShadowFirstChild : 0 3px 3px $mainNavBackground;
+	$dropdownBoxShadow           : 0 0px 5px $mainNavBackground;
 
-	$primaryNavDivider: 1px solid $primarySeparatorColour;
-	$secondaryNavDivider: 1px dotted $primarySeparatorColour;
+	$primaryNavDivider   : 1px solid $primarySeparatorColour;
+	$secondaryNavDivider : 1px dotted $primarySeparatorColour;
 
-	$rightHandButtonsHoverBoxShadow: 0 0 0 1px $secondarySeparatorColour;
-	$rightHandButtonsTextColour: $textColour;
-	$rightHandButtonsBackgroundColour: $mainNavBackground;
-	$rightHandButtonsDivider: 1px dotted $secondarySeparatorColour;
+	$rightHandButtonsHoverBoxShadow   : 0 0 0 1px $secondarySeparatorColour;
+	$rightHandButtonsTextColour       : $textColour;
+	$rightHandButtonsBackgroundColour : $mainNavBackground;
+	$rightHandButtonsDivider          : 1px dotted $secondarySeparatorColour;
 }
 
-/* _______________ DO NOT CHANGE CSS BELOW THIS LINE UNLESS YOU KNOW HWAT YOU ARE DOING _______________ */
-
+/*
+**	DO NOT CHANGE CSS BELOW THIS LINE UNLESS YOU KNOW HWAT YOU ARE DOING!
+*/
 
 
 
