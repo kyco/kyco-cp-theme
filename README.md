@@ -18,9 +18,10 @@ Customisation
 You can manually replace the logo.png (in the images directory) to give the login screen
 a more personal touch.
 
-To customise the CSS, simply run `sass --watch global.scss:global.css`. This will allow you to change
-the colours in the `global.scss` as you please. Rember to also set `$custom_scheme` to `true` in 
-`_config.scss` if you wish to change the default colours.
+To customise the CSS, simply run `sass --watch global.scss:global.css` from within the `kyco/css`
+directory. This will allow you to change the colours in the `global.scss` as you please.
+Rember to also set `$custom_scheme` to `true` in `_config.scss` if you wish to change the
+default colours.
 
 Colour schemes
 --------------
@@ -31,7 +32,7 @@ as your default font colour. Compile and save.
 
 Don't know SASS? More info on [SASS](http://sass-lang.com/).
 
-**Conflicts:**  
+**Conflicts:**
 Superfish EE Control Panel (simply uninstall superfish to get kyco cp theme working)
 
 
