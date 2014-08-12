@@ -23,21 +23,21 @@ directory. This will allow you to change the colours in the `global.scss` as you
 Rember to also set `$custom_scheme` to `true` in `_config.scss` if you wish to change the
 default colours.
 
-Colour schemes
---------------
+Usually you'd go to `_config.scss` flip the `$custom_scheme` to `true`. Then you'd navigate to
+the `global.scss` and change your primary colour and primary font colours as shown by the
+comments in that file. Anything else is really up to you.
 
-The section of the stylesheet that controls the menu has been updated with SASS variables to allow
-for easy access to default colours. Simply open the global.scss and change the primary colour as well
-as your default font colour. Compile and save.
 
-Don't know SASS? More info on [SASS](http://sass-lang.com/).
+Conflicts:
+----------
 
-**Conflicts:**
-Superfish EE Control Panel (simply uninstall superfish to get kyco cp theme working)
+- Superfish EE Control Panel (simply uninstall superfish to get kyco cp theme working)
 
 
 Support
 -------
+
+Info on [SASS](http://sass-lang.com/).
 
 For bugs or improvements please use the [issues tab](https://github.com/kyco/kyco-cp-theme/issues)
 or email [support@kycosoftware.com](mailto:support@kycosoftware.com).
