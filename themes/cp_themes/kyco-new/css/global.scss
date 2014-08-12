@@ -3,7 +3,7 @@
 	kyco-cp-theme
 	=============
 
-	Version 1.1.1
+	Version 1.2.0
 
 	Brought to you by
 	http://www.kycosoftware.com/
@@ -22,47 +22,62 @@
 	/*
 	**	Your primary colour
 	*/
-	$mainNavBackground: rgb(68, 134, 246); // Change this to your primary colour!
+	$mainNavBackground: #51A42E; //#972E8F; //#27343c; //rgb(68, 134, 246); // Change this to your primary colour!
 
 	/*
 	**	Your primary font colours
 	*/
-	$textColour      : #fff;
-	$hoverTextColour : $textColour;
+	$textColour: #fff;
+	$hoverTextColour: $textColour;
 
 	// Play around with the variables below to optimise your scheme:
 
-	$primaryColour   : lighten($mainNavBackground, 10%);
-	$secondaryColour : darken($mainNavBackground, 10%);
+	$primaryColour: lighten($mainNavBackground, 10%);
+	$secondaryColour: darken($mainNavBackground, 10%);
 
 	$dropDownHoverBackgroundColour: $secondaryColour;
 
-	$primarySeparatorColour   : darken($mainNavBackground, 5%);
-	$secondarySeparatorColour : darken($mainNavBackground, 5%);
+	$primarySeparatorColour: darken($mainNavBackground, 5%);
+	$secondarySeparatorColour: darken($mainNavBackground, 5%);
 
-	$listItemSelectorBackgroundColour      : darken($mainNavBackground, 5%);
-	$listItemSelectorHoverBackgroundColour : $textColour;
+	$listItemSelectorBackgroundColour: darken($mainNavBackground, 5%);
+	$listItemSelectorHoverBackgroundColour: $textColour;
 
-	$quickTabTextColour      : darken($textColour, 20%);
-	$quickTabHoverTextColour : $textColour;
+	$quickTabTextColour: darken($textColour, 20%);
+	$quickTabHoverTextColour: $textColour;
 
 	// Finer details can be changed by editing the variables below this line:
 
-	$homeAndQuickTabButtonHoverBackgroundColour : $mainNavBackground;
+	$homeAndQuickTabButtonHoverBackgroundColour: $mainNavBackground;
 
-	$dropdownMenuListItemsHoverBackgroundColour : $primaryColour;
-	$dropdownMenuListBackgroundColour           : $primaryColour;
+	$dropdownMenuListItemsHoverBackgroundColour: $primaryColour;
+	$dropdownMenuListBackgroundColour: $primaryColour;
 
-	$dropdownBoxShadowFirstChild : 0 3px 3px $mainNavBackground;
-	$dropdownBoxShadow           : 0 0px 5px $mainNavBackground;
+	$dropdownBoxShadowFirstChild: 0 3px 3px $mainNavBackground;
+	$dropdownBoxShadow: 0 0px 5px $mainNavBackground;
 
-	$primaryNavDivider   : 1px solid $primarySeparatorColour;
-	$secondaryNavDivider : 1px dotted $primarySeparatorColour;
+	$primaryNavDivider: 1px solid $primarySeparatorColour;
+	$secondaryNavDivider: 1px dotted $primarySeparatorColour;
 
-	$rightHandButtonsHoverBoxShadow   : 0 0 0 1px $secondarySeparatorColour;
-	$rightHandButtonsTextColour       : $textColour;
-	$rightHandButtonsBackgroundColour : $mainNavBackground;
-	$rightHandButtonsDivider          : 1px dotted $secondarySeparatorColour;
+	$rightHandButtonsHoverBoxShadow: 0 0 0 1px $secondarySeparatorColour;
+	$rightHandButtonsTextColour: $textColour;
+	$rightHandButtonsBackgroundColour: $mainNavBackground;
+	$rightHandButtonsDivider: 1px dotted $secondarySeparatorColour;
+
+	// Layout colours
+	$htmlAndFooterBg: $primaryColour;
+	$breadCrumbBg: lighten($primaryColour, 20%);
+	$breadCrumbFont: #fff;
+	$headingBg: $primaryColour;
+
+	$footerFont: $breadCrumbFont;
+	$footerLinkFont: darken($breadCrumbFont, 5%);
+
+	$rowBg: #fff; //lighten($primaryColour, 10%);
+	$rowButtonBg: darken($primaryColour, 10%);
+	$rowButtonFont: #fff;
+	$rowButtonBgHover: darken($primaryColour, 20%);
+	$rowButtonFontHover: #fff;
 }
 
 /*
@@ -81,26 +96,26 @@
 /* For modern browsers */
 .cf:before,
 .cf:after {
-	content:"";
-	display:table;
+	content: "";
+	display: table;
 }
 
 .cf:after {
-	clear:both;
+	clear: both;
 }
 
 /* For IE 6/7 (trigger hasLayout) */
 .cf {
-	zoom:1;
+	zoom: 1;
 }
 
 html, body, p, img, div, h1, h2, h3, h4, h5, h6, ol, ul, li, form, input, select, option, fieldset {
-	margin:                 0;
-	padding:                0;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-	background-color:       #3e4c54;
+	background-color: $htmlAndFooterBg;
 }
 
 body {
@@ -112,6 +127,10 @@ body {
 
 optgroup option {
 	padding-left:           10px;
+}
+
+select {
+	padding: 3px 5px;
 }
 
 img, fieldset {
@@ -258,12 +277,12 @@ table a:hover {
 /* Button Link Styles */
 .button {
 	float:                  left;
-	margin-right:           6px;
+	// margin-right:           6px;
 }
 
 .button a:link,
 .button a:visited {
-	color:                  #5f6c74;
+	color:                  $rowButtonFont;
 	display:                block;
 	padding:                5px 9px;
 }
@@ -431,17 +450,17 @@ a:visited.submit {
 .less_important_bttn,
 .rightNav .submit {
 	font-weight:    normal;
-	background:     #d0d9e1;
-	color:          #34424b;
+	background:     $rowButtonBg;//#d0d9e1;
+	color:          $rowButtonFont;
 }
 
 .less_important_bttn:hover,
 .rightNav a.submit:hover {
-	background-color:#e11842;
+	background-color: $rowButtonBgHover;//#e11842;
 	text-decoration:none;
 }
 
-.rightNav a.submit:hover{ color: #FFFFFF; }
+.rightNav a.submit:hover{ color: $rowButtonFontHover; }
 
 .submit_alt {
 	background:         #FFF url('../../default/images/submit_alt_button_bg.jpg') bottom left repeat-x!important;
@@ -952,28 +971,35 @@ a#revealSidebarLink:link, a#revealSidebarLink:visited  {
 #breadCrumb {
 	font-size:          12px;
 	color:              #5f6c74;
-	background-color:   #ECF1F4;
-	margin-bottom:      15px;
-	padding:            2px 25px 0px 5px;
+	background-color:   $breadCrumbBg;
+	// margin:      0 30px;
+	padding:            1px 30px 0;
 }
 
 #breadCrumb ol {
 	list-style:         none;
-	padding-left:       24px; /* combines with the li padding to inset the first crumb 25px */
 }
 
 #breadCrumb li {
 	line-height:        24px;
 	display:            block;
 	float:              left;
-	padding:            0 25px 0 1px;
-	background:         #ECF1F4 url('../../default/../default/images/cp_sprite.png') right -94px no-repeat;
-	color:              #5E6871;
+	color:              $breadCrumbFont;
 	cursor: default;
+
+	&:after {
+		content: '/';
+		padding: 0 10px;
+		color: #fff;
+		text-shadow: 1px 0 2px #aaa;
+	}
 }
 
 #breadCrumb li.last {
 	background-image:   none;
+	&:after {
+		display: none;
+	}
 }
 
 #breadCrumb li.current {
@@ -982,7 +1008,7 @@ a#revealSidebarLink:link, a#revealSidebarLink:visited  {
 }
 
 #breadCrumb a:link, #breadCrumb a:visited {
-	color:              #E7174B;
+	color:              $breadCrumbFont;
 }
 
 #breadCrumb a:hover {
@@ -991,7 +1017,7 @@ a#revealSidebarLink:link, a#revealSidebarLink:visited  {
 
 #breadCrumb li.last {
 	background-image:   none;
-	color: #5E6871;
+	color: $breadCrumbFont;
 	font-weight: bold;
 }
 
@@ -1001,11 +1027,11 @@ a#revealSidebarLink:link, a#revealSidebarLink:visited  {
 }
 
 #breadCrumb a:link, #breadCrumb a:visited {
-	color:              #5f6c74;
+	color:              $breadCrumbFont;
 }
 
 #breadCrumb a:hover {
-	color:              #333;
+	// color:              #333;
 	text-decoration:    underline;
 }
 
@@ -1017,6 +1043,7 @@ a#revealSidebarLink:link, a#revealSidebarLink:visited  {
 #mainContent {
 	width:              77%;
 	position:relative;
+	margin-top: 10px;
 }
 
 
@@ -1097,19 +1124,19 @@ a#revealSidebarLink:link, a#revealSidebarLink:visited  {
 
 
 .contentMenu .heading {
-	background:         #ABB7C3 url('../../default/images/backgrounds_sprite.png') repeat-x 0 -17px;
+	background:         $headingBg;// url('../../default/images/backgrounds_sprite.png') repeat-x 0 -17px;
 }
 
 .contentMenu h2 span {
-	vertical-align:     bottom;
+	// vertical-align:     bottom;
 	font-size:          18px;
 }
 
 .contentMenu ul {
 	padding-bottom:         20px;
 	background-color:       #ECF1F4;
-	-webkit-border-radius:  10px;
-	border-radius:          10px;
+	// -webkit-border-radius:  10px;
+	// border-radius:          10px;
 }
 
 .contentMenu ul.homeBlocks {
@@ -1219,12 +1246,12 @@ a#revealSidebarLink:link, a#revealSidebarLink:visited  {
 }
 
 .heading h2 {
-	background:         transparent url('../../default/images/heading_images_sprite.gif') right -203px no-repeat;
+	// background:         transparent url('../../default/images/heading_images_sprite.gif') right -203px no-repeat;
 	font-weight:        normal;
 	color:              #fff;
 	font-size:          19px;
 	line-height:        1;
-	padding:            7px 17px 7px 17px;
+	padding:            15px 0 5px;
 	position:           relative;
 	text-shadow:        #666 0 1px 0;
 }
@@ -1290,35 +1317,39 @@ a#revealSidebarLink:link, a#revealSidebarLink:visited  {
 /* Home Page buttons */
 
 #mainContent .create h2 {
-	background:         transparent url('../../default/images/heading_images_sprite.gif') right -11px no-repeat;
+	// background:         transparent url('../../default/images/heading_images_sprite.gif') right -11px no-repeat;
 }
 
 #mainContent .modify h2 {
-	background:         transparent url('../../default/images/heading_images_sprite.gif') right -131px no-repeat;
+	// background:         transparent url('../../default/images/heading_images_sprite.gif') right -131px no-repeat;
 }
 
 #mainContent .view h2 {
-	background:         transparent url('../../default/images/heading_images_sprite.gif') right -72px no-repeat;
+	// background:         transparent url('../../default/images/heading_images_sprite.gif') right -72px no-repeat;
 }
 
 .contents {
 	clear:              left;
-	padding:            0 25px 25px 25px;
+	// padding:            0 30px 25px;
 	position:           relative;
 }
 
 .rightNav {
-	padding:            0 25px;
+	background: $rowBg;
+	padding: 0 30px 10px;
+	// padding:            0 25px;
 }
 
 .rightNav span {
 	float:              right;
-	margin-bottom:      10px;
+	margin-left: 5px;
+	// margin-bottom:      10px;
 }
 
 .contents .heading {
-	background:         #ABB7C3 url('../../default/images/backgrounds_sprite.png') repeat-x 0 -330px;
+	background:         $headingBg;// url('../../default/images/backgrounds_sprite.png') repeat-x 0 -330px;
 	clear:              left;
+	padding: 0 30px 10px;
 }
 
 #mainContent #registerUser label,
@@ -3130,35 +3161,38 @@ html.js .publish_hidden {
 	font-size:          18px;
 	line-height:        18px;
 	color:              #dee4e4;
-	background:         #98AAB6 url('../../default/images/backgrounds_sprite.png') repeat-x 0 -426px;
-	padding:            6px 12px;
+	// background:         #98AAB6 url('../../default/images/backgrounds_sprite.png') repeat-x 0 -426px;
+	background:         $headingBg;
+	padding:            10px 12px;
 }
 
 #accessoryTabs li a:link,
 #accessoryTabs li a:visited {
 	display:            block;
-	padding-right:      18px;
+	// padding-right:      18px;
 	color:              #fff;
-	text-shadow:        #666 0 1px 0px;
+	text-shadow:        0 1px 0px darken($mainNavBackground, 20%);
 	position:           relative;
 }
 
 #accessoryTabs li.current a {
-	text-shadow:        0 1px 0 #000;
+	text-shadow:        0 1px 0 darken($mainNavBackground, 20%);//#000;
+	text-decoration: underline;
 }
 
 #accessoryTabs li a span.accessoryHandle {
-		background:         transparent url('../../default/images/cp_sprite.png') no-repeat left top;
-		position:           absolute;
-		right:              0;
-		top:                4px;
-		width:              11px;
-		height:             11px;
+	display: none;
+	background:         transparent url('../../default/images/cp_sprite.png') no-repeat left top;
+	position:           absolute;
+	right:              0;
+	top:                4px;
+	width:              11px;
+	height:             11px;
 }
 
 #accessoryTabs li.current {
 	color:              #fff;
-	background-color:   #243038;
+	background-color:   $mainNavBackground;//#243038;
 	background-image:   none;
 }
 
@@ -3170,8 +3204,8 @@ html.js .publish_hidden {
 #accessoriesDiv .accessory {
 	clear:              both;
 	display:            none;
-	color:              #a0aaa4;
-	background-color:   #243038;
+	color:              $footerFont;
+	background-color:   $mainNavBackground;//#243038;
 	font-size:          11px;
 	padding:            22px 25px;
 }
@@ -3179,14 +3213,14 @@ html.js .publish_hidden {
 #accessoriesDiv .accessorySection {
 	padding:            0 22px;
 	float:              left;
-	border-left:        1px solid #445058;
+	border-left:        1px solid $footerFont;
 }
 
 #accessoriesDiv .accessorySection h5 {
 	font-size:          18px;
 	font-weight:        normal;
 	color:              #fff;
-	text-shadow:        0 1px 0 #000;
+	text-shadow:        0 1px 0 darken($mainNavBackground, 20%);//#000;
 	margin-bottom:      18px;
 }
 
@@ -3195,11 +3229,11 @@ html.js .publish_hidden {
 }
 
 #accessoriesDiv .accessorySection a:link, #accessoriesDiv .accessorySection a:visited {
-	color:              #a0aaa4;
+	color:              $footerLinkFont;
 }
 
 #accessoriesDiv .accessorySection a:hover {
-	color:              #fff;
+	color:              $footerFont;
 }
 
 #accessoriesDiv a:hover {
@@ -3739,8 +3773,8 @@ table.mainTable a.less_important_link:link {
 	clear:              both;
 	text-align:         center;
 	font-size:          11px;
-	color:              #8F9A9C;
-	background-color:   #3E4C54;
+	color:              $footerFont;
+	background-color:   $htmlAndFooterBg;
 	padding:            20px 0 15px 0;
 }
 
@@ -3749,7 +3783,7 @@ table.mainTable a.less_important_link:link {
 }
 
 #footer a:link, #footer a:visited, #footer a:hover {
-	color:              #ccc;
+	color:              $footerLinkFont;
 }
 
 /* Categories */
@@ -4199,31 +4233,31 @@ div.alert li {
 #search form,
 div.contentMenu,
 #mainContent .formArea {
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
 
 #navigationTabs .addTab {
 	border-radius: 0;
 }
 
-#accessoryTabs li,
 .heading {
 	overflow: hidden;   /* our headings have images in them where rounding won't work */
 
-	-webkit-border-top-left-radius: 10px;
-	-webkit-border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	// -webkit-border-top-left-radius: 5px;
+	// -webkit-border-top-right-radius: 5px;
+	// border-top-left-radius: 5px;
+	// border-top-right-radius: 5px;
+	padding-top: 15px;
 }
 
 .tableFooter,
 div.pageContents,
 #mainContent #publishForm {
-	-webkit-border-bottom-right-radius: 10px;
-	-webkit-border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
+	// -webkit-border-bottom-right-radius: 5px;
+	// -webkit-border-bottom-left-radius: 5px;
+	// border-bottom-right-radius: 5px;
+	// border-bottom-left-radius: 5px;
 }
 
 .newTemplate {
@@ -4237,7 +4271,7 @@ div.pageContents,
 }
 
 .nanner{
-	background-color: #3E4C54;
+	background-color: $htmlAndFooterBg;
 	border: solid #000000;
 	border-width: 1px 0;
 	color: #ECF1F4;
