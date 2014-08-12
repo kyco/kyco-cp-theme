@@ -4,6 +4,9 @@ kyco CP Theme
 
 An EE Control Panel theme. It focuses on a highly efficient navigation which is fixed for quick access.
 
+**Note:** There is now a kyco-new theme in the install which is a work in progress
+(it works just fine for the default colour, custom colour scheming not done yet :)).
+
 How to install
 --------------
 
