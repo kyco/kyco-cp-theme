@@ -34,7 +34,7 @@ comments in that file. Anything else is really up to you.
 Conflicts:
 ----------
 
-- Superfish EE Control Panel (simply uninstall superfish to get kyco cp theme working)
+- Superfish EE Control Panel (simply uninstall to resolve conflict)
 
 
 Support
