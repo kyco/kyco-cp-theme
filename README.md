@@ -2,7 +2,7 @@ kyco CP Theme
 =============
 #### Version: 1.2.0
 
-An EE Control Panel theme. It focuses on a highly efficient navigation which is fixed for quick access.
+An [EE](https://expressionengine.com/) Control Panel theme. It focuses on a highly efficient navigation which is fixed for quick access.
 
 
 How to install
