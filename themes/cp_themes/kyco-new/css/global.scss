@@ -6,7 +6,7 @@
 	Version 1.2.0
 
 	Brought to you by
-	http://www.kycosoftware.com/
+	http://www.kyco.io/
 
 	Copyright 2014 Cornelius Weidmann
 
